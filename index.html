@@ -2,9 +2,132 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="main.css"> 
+	<link href="main.css" rel="stylesheet" type="text/css">
+	<link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sumana" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-	<h1>Hello</h1>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    	<div class="navbar-header">
+    		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    		<span class="sr-only">Toggle navigation</span>
+    		<span class="icon-bar"></span>
+    		<span class="icon-bar"></span>
+    		<span class="icon-bar"></span>
+    		</button>
+    		<a class="navbar-brand">Diana Thun-Hohenstein</a>
+    	</div>
+    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    		<ul class="nav navbar-nav">
+			<li><a href="#">About</a></li>    		
+			<li><a href="#">Contact</a></li>
+    		</ul>
+    	</div>
+  </div>
+</nav>
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+  <div class="container">
+    <form class="navbar-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+     </form>
+
+  </div>
+</nav>
+<div class="jumbotron">
+	<div class="container">
+		<h1>Welcome!</h1>
+
+		<p>Would you like to receive our weekly newsletter?</p>
+			<form class="form-inline">
+  				<div class="form-group">
+   				 <label for="exampleInputName2">Name</label>
+    			<input type="text" class="form-control" id="exampleInputName2" placeholder="Your name here">
+  				</div>
+  				<div class="form-group">
+   			 	 <label for="exampleInputEmail2">Email</label>
+    			<input type="email" class="form-control" id="exampleInputEmail2" placeholder="example@example.com">
+  				</div>
+  			<button type="submit" id="newsletter" class="btn btn-success" data-toggle="button" aria-pressed="false" autocomplete="off" data-complete-text="Sent!">Send newsletter</button>
+			</form>
+	</div>
+</div>	
+
+<div class="container">
+	<div class="col-sm-4">
+		<img src="images/consultants.jpg" class="img-responsive" alt="Responsive image">
+		<br>
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  			<div class="panel panel-default">
+   			<div class="panel-heading" role="tab" id="headingOne">
+      		<h4 class="panel-title">
+       		 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         <strong>Who we are</strong>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Blablablabla here is a lengthy explanation of what we do etc
+      </div>
+    </div>
+  </div>
+  </div>
+	</div>
+	<div class="col-sm-4">
+		<img src="images/tax.jpg" class="img-responsive" alt="Responsive image">
+		<br>
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  			<div class="panel panel-default">
+   			<div class="panel-heading" role="tab" id="headingOne">
+      		<h4 class="panel-title">
+       		 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         <strong>What we do</strong>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Blablablabla here is a lengthy explanation of what we do etc
+      </div>
+    </div>
+  </div>
+  </div>
+	</div>
+	<div class="col-sm-4">
+		<img src="images/ideas2.jpg" class="img-responsive" alt="Responsive image">
+		<br>
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  			<div class="panel panel-default">
+   			<div class="panel-heading" role="tab" id="headingOne">
+      		<h4 class="panel-title">
+       		 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         <strong>How we do it</strong>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Blablablabla here is a lengthy explanation of what we do etc
+      </div>
+    </div>
+  </div>
+  </div>
+	</div>
+</div>
+<div class="container">	
+	<h2>header demo</h2>
+	<p>Random text here</p>
+</div>
+	<script>
+	$("#newsletter").on("click", function() {
+		$(this).button("complete")
+	})
+	</script>
 </body>
 </html>
